@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    display: flex;
+    align-content: enter;
+    align-items: enter;
+    height: 100vh;
+    width: 100vw;
+}
+.tictactoe{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-wrap: wrap;
+}
+.board{
+    display: flex;
+    justify-content: center;
+    flex: 4;
+    min-width: 750px;
+}
+table{
+    border-spacing: 5px;
+    font-size: 10vw;
+    text-align: center;
+    width: 80%;
+    height: 90vh;
+    max-height: 90vh;
+    max-width: 80%;
+    align-self: center;
+}
+table tr td{
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 33.333333%;
+    height: 33.33333%;
+    max-width: 33.333333%;
+    max-height: 33.33333%;
+    color: grey;
+    background: rgba(228, 228, 228, 0.438);
+    overflow: hidden;
+}
+table tr td:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.123);
+    transition: transform 0.5s, color 0.2s, background 0.3s;
+    background: rgb(116, 142, 255);
+    color: white;
+    border: 3px solid rgba(0, 0, 0, 0.075);
+}
+#firstMove{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+#firstMove h1{
+    opacity: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+.turn{
+    flex: 1;
+}
+.button-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    flex: 1;
+    margin: 20px;
+    border: 3px solid rgb(182, 182, 182);
+    border-radius: 5px;
+    font-size: 2vw;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+button:hover{
+    transform: translate(-2px, -2px);
+    transition: all 0.5s;
+    box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.096);
+    background: #f1aa676c;
+    border: 3px solid rgb(124, 124, 124)
+}
+.scoreboard{
+    flex: 1;
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+}
+.skynetScore-container{
+    flex: 1;
+}
+.yourScore-container{
+    flex: 1;
+}
+.noHover{
+    pointer-events: none;
+}
+
+#skynetScore{
+    margin-top: 20px;
+    color: #67dcf1;
+    font-size: 3vw;
+}
+#yourScore{
+    color: #f1aa67;
+    margin-top: 20px;
+    font-size: 3vw;
+}
+.winningLine{
+    background: rgb(245, 72, 72);
+    color: white;
+    border: 3px solid grey;
+}

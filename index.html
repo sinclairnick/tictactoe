@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tic tac toe</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+</head>
+
+<body>
+    <!-- this-took-me-way-longer-than-it-should-have.html-->
+    <div class="tictactoe">
+        <div id="firstMove">
+            <div class="turn">
+                <h1></h1>
+            </div>
+            <div class="button-container">
+                <button data-token1='X' data-token2='O'>default</button>
+                <button data-token1='a' data-token2='b'>a  b</button>
+                <button data-token1='💩' data-token2='🍑'>💩  🍑</button>
+                <button data-token1='&#9794' data-token2='&#9792'>&#9794  &#9792</button>
+            </div>
+        </div>
+        <div class="board">
+            <table>
+                <tr>
+                    <td id="c1"></td>
+                    <td id="c2"></td>
+                    <td id="c3"></td>
+                </tr>
+                <tr>
+                    <td id="c4"></td>
+                    <td id="c5"></td>
+                    <td id="c6"></td>
+                </tr>
+                <tr>
+                    <td id="c7"></td>
+                    <td id="c8"></td>
+                    <td id="c9"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="scoreboard">
+            <div class="skynetScore-container">
+            <h1 id="skynetScore"></h1>
+            </div>
+            <div class="yourScore-container">
+            <h1 id="yourScore"></h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
